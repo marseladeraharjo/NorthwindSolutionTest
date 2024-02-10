@@ -18,6 +18,8 @@ internal class Program
         //register interface IRepositoryBase<Category> & CategoryRepository Impl
         builder.Services.AddScoped<IRepositoryBase<Category>, CategoryRepository>();
         builder.Services.AddScoped<ICategoryService<CategoryDto>, CategoryService>();
+        builder.Services.AddScoped<IRepositoryBase<Product>, ProductRepository>();
+        builder.Services.AddScoped<IProductService, ProductService>();
 
         //register AutoMapper
         builder.Services.AddAutoMapper(typeof(Program));

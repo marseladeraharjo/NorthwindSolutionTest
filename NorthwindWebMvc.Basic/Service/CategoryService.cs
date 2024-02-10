@@ -34,7 +34,7 @@ namespace NorthwindWebMvc.Basic.Service
         public async Task<IEnumerable<CategoryDto>> FindAll(bool trackChanges)
         {
             var categories = await _repositoryBase.FindAll(false);
-            var categoryDto = _mapper.Map<IEnumerable<CategoryDto>>(categories);
+            var categoryDto = _mapper.Map<IEnumerable<CategoryDto>>(categories).ToList();
             return categoryDto;
         }
 
