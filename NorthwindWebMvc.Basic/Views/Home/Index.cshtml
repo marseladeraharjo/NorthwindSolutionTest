@@ -1,0 +1,22 @@
+﻿@using NorthwindWebMvc.Basic.Models.Dto;
+@{
+    ViewData["Title"] = "Home Page";
+    var category = ViewData["Categories"] as CategoryDto;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome,@ViewData["Message"]</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div>
+    @category.CategoryName <br />
+    @category.Description <br />
+</div>
+
+<h3>ViewBag</h3>
+<div>
+    @ViewBag.MyCategory.CategoryName <br />
+    @ViewBag.MyCategory.Description <br />
+</div>
+  

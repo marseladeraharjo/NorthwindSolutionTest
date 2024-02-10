@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basic", "Basic", "{47AEAADC-CBC5-4EF2-A2EE-390652080473}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthwindWebMvc.Basic", "NorthwindWebMvc.Basic\NorthwindWebMvc.Basic.csproj", "{A6EE359C-E943-4937-A0BB-329253FCD399}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Intermediate", "Intermediate", "{D6190866-BC0E-4300-AB04-4229E9B87E36}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6EE359C-E943-4937-A0BB-329253FCD399}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6EE359C-E943-4937-A0BB-329253FCD399}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6EE359C-E943-4937-A0BB-329253FCD399}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6EE359C-E943-4937-A0BB-329253FCD399}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A6EE359C-E943-4937-A0BB-329253FCD399} = {47AEAADC-CBC5-4EF2-A2EE-390652080473}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F1D09946-CB3F-4E87-B694-35D834B73DB1}
+	EndGlobalSection
+EndGlobal
