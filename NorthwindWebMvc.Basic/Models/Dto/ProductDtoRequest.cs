@@ -15,12 +15,13 @@ namespace NorthwindWebMvc.Basic.Models.Dto
         public decimal Price { get; set; }
         public int Stock { get; set; }
 
-        public IFormFile Photo { get; set; }
+        [Required(ErrorMessage = "Please select image")]
+        public IFormFile? Photo { get; set; }
 
         [Column("CategoryId")]
         public int CategoryId { get; set; }
 
         //relasi one-to-many
-        public CategoryDto Category { get; set; }
+        public CategoryDto? Category { get; set; }
     }
 }

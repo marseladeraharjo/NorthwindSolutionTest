@@ -88,9 +88,9 @@ namespace NorthwindWebMvc.Basic.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ProductName,Price,Stock,Photo,CategoryId")] ProductDtoRequest product)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-
+                    
                 try
                 {
                     var file = product.Photo;
@@ -175,7 +175,7 @@ namespace NorthwindWebMvc.Basic.Controllers
                 return NotFound();
             }
 
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 try
                 {
