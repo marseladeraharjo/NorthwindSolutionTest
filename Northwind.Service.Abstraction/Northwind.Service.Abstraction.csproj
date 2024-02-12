@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Northwind.Service.Abstraction</AssemblyName>
+    <RootNamespace>Northwind.Service.Abstraction</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Master\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Northwind.Contract\Northwind.Contract.csproj" />
+  </ItemGroup>
+
+</Project>

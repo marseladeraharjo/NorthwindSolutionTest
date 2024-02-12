@@ -113,8 +113,7 @@ namespace NorthwindWebMvc.Basic.Controllers
                             Price = product.Price,
                             Stock = product.Stock,
                             Photo = fileName,
-                            CategoryId = product.CategoryId,
-                            Category = product.Category
+                            CategoryId = product.CategoryId
                         };
                         _productService.Create(productDto);
 
@@ -200,8 +199,7 @@ namespace NorthwindWebMvc.Basic.Controllers
                             Price = product.Price,
                             Stock = product.Stock,
                             Photo = fileName,
-                            CategoryId = product.CategoryId,
-                            Category = product.Category
+                            CategoryId = product.CategoryId
                         };
                         _productService.Update(productDto);
 

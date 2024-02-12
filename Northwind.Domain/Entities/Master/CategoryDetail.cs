@@ -1,8 +1,8 @@
-﻿using NorthwindWebMvc.Basic.Models.Base;
+﻿using Northwind.Domain.Base;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace NorthwindWebMvc.Basic.Models
+namespace Northwind.Domain.Entities.Master
 {
     //relasi oneToOne between Category & CategoryDetail
     [Table("CategoryDetail", Schema = "master")]
